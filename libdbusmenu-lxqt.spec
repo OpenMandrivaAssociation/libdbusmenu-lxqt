@@ -13,6 +13,7 @@ Group: System/Libraries
 BuildRequires: cmake
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Core)
+BuildRequires: cmake(Qt6Widgets)
 BuildRequires: pkgconfig(QJson)
 
 %description
