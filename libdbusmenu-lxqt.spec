@@ -11,6 +11,8 @@ URL: https://github.com/lxqt/libdbusmenu-lxqt
 License: LGPL-2.1
 Group: System/Libraries
 BuildRequires: cmake
+BuildRequires: cmake(Qt6)
+BuildRequires: cmake(Qt6Core)
 BuildRequires: pkgconfig(QJson)
 
 %description
