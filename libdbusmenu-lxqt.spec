@@ -3,8 +3,8 @@
 %define devname %mklibname dbusmenu-lxqt -d
 
 Name: libdbusmenu-lxqt
-Version: 0.2.0
-Release: 2
+Version: 0.3.0
+Release: 1
 Source0: https://github.com/lxqt/libdbusmenu-lxqt/archive/%{version}/%{name}-%{version}.tar.gz
 Summary: The LXQt implementation of the DBusMenu protocol
 URL: https://github.com/lxqt/libdbusmenu-lxqt
