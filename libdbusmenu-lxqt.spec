@@ -11,11 +11,10 @@ URL: https://github.com/lxqt/libdbusmenu-lxqt
 License: LGPL-2.1
 Group: System/Libraries
 BuildSystem: cmake
-BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Core)
 BuildRequires: cmake(Qt6Widgets)
+BuildRequires: cmake(Qt6DBus)
 BuildRequires: cmake(Qt6Test)
-BuildRequires: pkgconfig(QJson)
 
 %description
 The LXQt implementation of the DBusMenu protocol
