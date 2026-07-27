@@ -4,13 +4,13 @@
 
 Name: libdbusmenu-lxqt
 Version: 0.4.0
-Release: 1
+Release: 2
 Source0: https://github.com/lxqt/libdbusmenu-lxqt/releases/download/%{version}/libdbusmenu-lxqt-%{version}.tar.xz
 Summary: The LXQt implementation of the DBusMenu protocol
 URL: https://github.com/lxqt/libdbusmenu-lxqt
 License: LGPL-2.1
 Group: System/Libraries
-BuildRequires: cmake
+BuildSystem: cmake
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Core)
 BuildRequires: cmake(Qt6Widgets)
@@ -34,17 +34,6 @@ Requires: %{libname} = %{EVRD}
 
 %description -n %{devname}
 Development files (Headers etc.) for %{name}.
-
-%prep
-%autosetup -p1
-%cmake \
-	-G Ninja
-
-%build
-%ninja_build -C build
-
-%install
-%ninja_install -C build
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
