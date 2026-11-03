@@ -3,14 +3,15 @@
 %define devname %mklibname dbusmenu-lxqt -d
 
 Name: libdbusmenu-lxqt
-Version: 0.4.0
-Release: 2
+Version: 0.5.0
+Release: 1
 Source0: https://github.com/lxqt/libdbusmenu-lxqt/releases/download/%{version}/libdbusmenu-lxqt-%{version}.tar.xz
 Summary: The LXQt implementation of the DBusMenu protocol
 URL: https://github.com/lxqt/libdbusmenu-lxqt
 License: LGPL-2.1
 Group: System/Libraries
 BuildSystem: cmake
+BuildRequires: cmake(lxqt2-build-tools) >= 2.5.0
 BuildRequires: cmake(Qt6Core)
 BuildRequires: cmake(Qt6Widgets)
 BuildRequires: cmake(Qt6DBus)
